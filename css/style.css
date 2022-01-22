@@ -3,7 +3,7 @@
 :root{
   /*=======Main theme colors=======*/
   --first-color: #0e2431;
-  --second-color: #6a59d1;
+  --second-color: #008cbf;
   --third-color: #777;
 
   /*=======Hover colors=======*/
@@ -37,7 +37,7 @@
 .dark-theme{
   /*=======Main theme colors=======*/
   --first-color: #fff;
-  --second-color: #6a59d1;
+  --second-color: #008cbf;
   --third-color: #a9afc3;
 
   /*=======Background colors=======*/
