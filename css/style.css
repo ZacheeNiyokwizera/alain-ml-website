@@ -376,6 +376,7 @@ header.sticky .nav-bar{
 }
 
 .about-img img{
+  height: 650px;
   max-width: 100%;
   min-width: 500px;
   border-radius: 10px;
@@ -456,6 +457,7 @@ header.sticky .nav-bar{
   padding: 50px;
   border-radius: 6px;
   box-shadow: var(--box-shadow);
+  height: 400px;
 }
 
 .service-card > i{
