@@ -369,6 +369,12 @@ header.sticky .nav-bar{
 .about .container .content{
   column-gap: 40px;
   width: 100%;
+  
+}
+
+.about {
+ 
+  margin-top: -290px;
 }
 
 .about-img{
