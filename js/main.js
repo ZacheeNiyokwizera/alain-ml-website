@@ -100,6 +100,7 @@ scrollTopBtn.addEventListener("click", () => {
 });
 
 //Navigation menu items active on page scroll
+
 window.addEventListener("scroll", () => {
     const sections = document.querySelectorAll("section");
     const scrollY = window.pageYOffset;
@@ -158,3 +159,74 @@ ScrollReveal().reveal('.about .professional-list li', { delay: 500, origin: 'rig
 ScrollReveal().reveal('.skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2', { delay: 700, origin: 'left' });
 ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', { delay: 800, origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('footer .group', { delay: 500, origin: 'top', interval: 200 });
+
+
+// sending emails
+
+      
+
+
+
+(function () {
+  // emailjs.init("USERID");
+  emailjs.init("ZMuZ6kfJ7Na8nsEaS");
+})();
+
+
+
+function validate() {
+  let loader = document.querySelector(".loader");
+  let name = document.querySelector(".name");
+  let email = document.querySelector(".email");
+  let msg = document.querySelector(".message");
+
+
+function sendmail(name, email, msg) {
+  emailjs.send("service_x9fw0wr", "template_sfbkr7r", {
+ 
+    from_name: name,
+    message: msg,
+    email: email,
+  });
+}
+
+function emptyerror() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Fields cannot be empty!",
+  });
+}
+
+function error() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Something went wrong!",
+  });
+}
+
+function success() {
+  Swal.fire({
+    icon: "success",
+    title: "Success...",
+    text: "Successfully sent message",
+  });
+}
+let btn = document.querySelector(".contact-form");
+
+  btn.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (name.value == "" || email.value == "" || msg.value == "") {
+      emptyerror();
+    } else {
+      loader.style.display = "flex";
+      sendmail(name.value, email.value, msg.value);
+      success();
+      loader.style.display = "none";
+    }
+  });
+}
+validate();
+
+

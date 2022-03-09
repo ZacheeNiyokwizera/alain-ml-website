@@ -9,9 +9,16 @@
     <link rel="icon" type="image/x-icon" href="/images/alain.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+     <script type="text/javascript">
+    (function() {
+    emailjs.init("ZMuZ6kfJ7Na8nsEaS");
+    })();
+    </script>
 
-  <body>
+    </head>
+
+   <body>
 
     <!--=======Scroll to top button=======-->
     <div class="scrollToTop-btn flex-center">
@@ -126,28 +133,30 @@
           <ul class="service-list">
             <li class="service-container">
               <div class="service-card">
-                <img style="width:80px" src="images/pic1.png" alt="">
+                <img style="width:80px" src="images/s-pic1.png" alt="">
                 <h3>Buying your Next Home</h3>
                 <div class="learn-more-btn">Don’t let buying your next home be stressful. We have outlined everything you need to know here.</div>
               </div>
             </li>
             <li class="service-container">
               <div class="service-card">
-                <img style="width:80px" src="images/pic2.png" alt="">
+                <img style="width:80px" src="images/s-pic2.png" alt="">
+
                 <h3>First Time Home Buying</h3>
                 <div class="learn-more-btn">Everything you need to know when buying your first home.</div>
               </div>
             </li>
             <li class="service-container">
               <div class="service-card">
-                <img style="width:80px" src="images/pic3.png" alt="">
+                <img style="width:80px" src="images/s-pic3.png" alt="">
                 <h3>Investment Property Mortgages</h3>
                 <div class="learn-more-btn">All you need to know about building wealth with rental income and real estate.</div>
               </div>
             </li>
             <li class="service-container">
               <div class="service-card">
-                <img style="width:80px" src="images/pic4.png" alt="">
+                <!-- <img style="width:80px" src="images/pic4.png" alt=""> -->
+                <img style="width:80px" src="images/s-pic4.png" alt="">
                 <h3>Refinancing to Consolidate</h3>
                 <div class="learn-more-btn">Reduce financial stress by consolidating your debts and dropping your monthly payments.</div>
               </div>
@@ -155,28 +164,32 @@
             
             <li class="service-container">
               <div class="service-card">
-                <img style="width:80px" src="images/pic7.png" alt="">
+                <img style="width:80px" src="images/s-pic5.png" alt="">
+             
                 <h3>Presale Mortgages</h3>
                 <div class="learn-more-btn">Buying a new build property as an investment can offer fantastic returns if you finance it correctly.</div>
               </div>
             </li>
             <li class="service-container">
               <div class="service-card">
-                <img style="width:80px" src="images/pic8.png" alt="">
+                <!-- <img style="width:80px" src="images/pic8.png" alt=""> -->
+                <img style="width:80px" src="images/s-pic6.png" alt="">
                 <h3>Home Renovation Financing</h3>
                 <div class="learn-more-btn">Everything you need to understand about financing improvements to your home.</div>
               </div>
             </li>
             <li class="service-container">
               <div class="service-card">
-                <img style="width:80px" src="images/pic9.png" alt="">
+                <!-- <img style="width:80px" src="images/pic9.png" alt=""> -->
+                <img style="width:80px" src="images/s-pic7.png" alt="">
                 <h3>Building a Home Financing</h3>
                 <div class="learn-more-btn">How to finance the home you intend to build.</div>
               </div>
             </li>
             <li class="service-container">
               <div class="service-card">
-                <img style="width:80px" src="images/pic10.png" alt="">
+                <!-- <img style="width:80px" src="images/pic10.png" alt=""> -->
+                <img style="width:80px" src="images/s-pic8.png" alt="">
                 <h3>Bridge Financing</h3>
                 <div class="learn-more-btn">How to bridge the gap between purchasing a new home and selling your existing property.</div>
               </div>
@@ -442,18 +455,18 @@
           </div>
           <div class="contact-right">
             <p>I'm always open to discussing <br><span> work or partnerships.</span></p>
-            <form action="" class="contact-form">
+            <form action="" class="contact-form" >
               <div class="first-row">
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Name" autocomplete="on" class="name">
               </div>
               <div class="second-row">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Subject">
+                <input type="email" placeholder="Email" autocomplete="on" class="email">
+                <!-- <input type="text" placeholder="Subject"> -->
               </div>
               <div class="third-row">
-                <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                <textarea name="message" autocomplete="on"  class="message" id="" rows="7" placeholder="Message"></textarea>
               </div>
-              <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+              <button class="btn"  type="submit">Send Message </button>
             </form>
           </div>
         </div>
@@ -498,10 +511,19 @@
         <p>© 2021 Alain Sarara. All rights reserved.</p>
       </div>
     </footer>
+      <!-- loader -->
+      <div class="loader">
+        <img
+          src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif"
+          alt=""
+        />
+      </div>
 
     <!--=======External scripts=======-->
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-
+  
   </body>
 </html>
